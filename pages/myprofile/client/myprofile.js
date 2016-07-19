@@ -1,5 +1,7 @@
  const name = $(".js-name").val();
  const gender = $(".js-gender").val();
+ const zipcode = $(".js-zipcode").val();
+ const place = $(".js-place").val();
  const birth = $(".js-birth").val();
  const lifestyle = $(".js-lifestyle").val();
  const ocd = $(".js-ocd").val();

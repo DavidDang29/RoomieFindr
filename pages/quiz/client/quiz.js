@@ -14,8 +14,8 @@ Template.quiz.events ({
     const age = $(".js-age").val();
     const gender = document.getElementById("js-gender").value; 
     const other = $(".js-otherGender").val();
-    const city = $(".js-city").val();
-    const state = $(".js-state").val();
+    const zipcode = $(".js-zipcode").val();
+    const place = document.getElementById("js-place").value;
     const lifestyle = document.getElementById("js-lifestyle").value;
     const ocd = document.getElementById("js-ocd").value;
     const music = document.getElementById("js-music").value;
@@ -33,7 +33,7 @@ Template.quiz.events ({
     const cook = document.getElementById("js-cook").value;
     const sex = document.getElementById("js-sexLife").value;
 
-    const quizResult = { name, age, gender, city, state, lifestyle, ocd, music, 
+    const quizResult = { name, age, gender, zipcode, place, lifestyle, ocd, music, 
         substance, sleepHab, sleepTime, personality,
         pets, petType, animal, color, hobby, hobbyOther, movie,
         cook, sex, userId: Meteor.userId() } 
