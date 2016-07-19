@@ -35,6 +35,34 @@ Template.listings.helpers({
 	   console.dir(val.fetch()); 
 	   return val;
 	}
+	Session.set("zipcode",null);
+
+
+Template.lookbasi1.helpers({
+
+	BaSis: function() {
+	    const zipcode = Session.get("zipcode");
+	    if (zipcode==null || zipcode=="") 
+		return UserInfo.find();
+	    if (zipcode!=null && zipcode != "")
+		return UserInfo.find({zip:zipcode});
+       },
+
+})
+
+
+Template.lookroomies.events({
+        "click .js-submit": function(event) {
+	    console.log("clicked it");
+	    Session.set("zipcode",$(".js-zipcode").val());
+	    console.log(Session.get("zipcode"));
+	},
+
+	"click .js-delete": function(event){
+		UserInfo.remove(this.roomie._id);
+	},
+
+})
 })
 
 
