@@ -5,13 +5,13 @@
 <br>
 <br> 
 
-<body>
 
 
   <table class="table table-bordered">
+  <thead><tr><th>Roommate Listings
+    </th></tr></thead>
   </table>
 
-  <thead><tr><th>Roommate Listings
   <!--<select>
     <option>Alabama</option>
     <option>Alaska</option>
@@ -64,13 +64,9 @@
     <option>Wisconsin</option>
 
   </select>-->
-  <br>
-</th></tr></thead>
-
   
 
 <br>
-<body>
   ZipCode to search: <input type="text" class="js-zipcode"><br>
 
   <center>
@@ -82,8 +78,6 @@
         {{#each user in mydata}}
       {{> listing user=user}}
    {{/each}}
-</body>
-</body>
   </template>
    
 
@@ -91,7 +85,7 @@
 
 <template name="listing">
       <tr><td>
-       <a href="viewProfile/{{user._id}}">Profile</a> {{user.name}}
+       <a href="viewProfile/{{user._id}}">Profile</a> {{user.name}} {{user.zipcode}}
       </td></tr>
 </template>
 

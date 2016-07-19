@@ -1,3 +1,5 @@
+Session.set("zipcode","");
+
  const name = $(".js-name").val();
  const gender = $(".js-gender").val();
  const email = $(".js-email").val();
@@ -24,45 +26,24 @@
 
  Template.listings.helpers({
   mydata: function(){
-    return listings.find({},{sort:{zipcode:1}});
-}
-  })
+    const zipcode = Session.get("zipcode");
+    if (zipcode=="") {
+	return UserInfo.find({},{limit:5});
+    }
+    else
+        return UserInfo.find({zipcode:zipcode});
+   },
 
-Template.listings.helpers({
-	mydata:function(){
-		console.log("getting mydata");
-	   const val =  QuizResults.find({});
-	   console.dir(val.fetch()); 
-	   return val;
-	}
-	Session.set("zipcode",null);
+  });
 
 
-Template.lookbasi1.helpers({
-
-	BaSis: function() {
-	    const zipcode = Session.get("zipcode");
-	    if (zipcode==null || zipcode=="") 
-		return UserInfo.find();
-	    if (zipcode!=null && zipcode != "")
-		return UserInfo.find({zip:zipcode});
-       },
-
-})
-
-
-Template.lookroomies.events({
+Template.listings.events({
         "click .js-submit": function(event) {
 	    console.log("clicked it");
 	    Session.set("zipcode",$(".js-zipcode").val());
 	    console.log(Session.get("zipcode"));
 	},
 
-	"click .js-delete": function(event){
-		UserInfo.remove(this.roomie._id);
-	},
-
-})
 })
 
 
