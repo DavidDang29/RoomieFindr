@@ -1,5 +1,6 @@
  const name = $(".js-name").val();
  const gender = $(".js-gender").val();
+ const email = $(".js-email").val();
  const zipcode = $(".js-zipcode").val();
  const place = $(".js-place").val();
  const birth = $(".js-birth").val();
