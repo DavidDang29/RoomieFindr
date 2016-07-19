@@ -22,8 +22,6 @@
  const sex =$(".js-sex").val();
 
 
- //console.dir(item);
- //UserInfo.insert(item);
  Template.listings.helpers({
   mydata: function(){
     return listings.find({},{sort:{zipcode:1}});
@@ -36,7 +34,6 @@ Template.listings.helpers({
 	   const val =  QuizResults.find({});
 	   console.dir(val.fetch()); 
 	   return val;
-	   // return QuizResults.find();
 	}
 })
 
