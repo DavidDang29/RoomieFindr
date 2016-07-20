@@ -16,12 +16,12 @@
 
 #compatibility{
 	border-style: solid;
-	border-color: orange;
+	border-color: #F47C48;
 	line-height:200%;
 	border-size: 1px;
 	border-radius: 100px;
 	border-width: 80px;
-	background: orange;
+	background: #F47C48;
 	font-family: 'Merriweather', serif;
 	font-size: 15px;
 }
