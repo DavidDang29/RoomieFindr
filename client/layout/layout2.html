@@ -11,7 +11,30 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a href="{{pathFor 'home'}}"><img src="http://i.imgur.com/PJhvTRd.png" alt="Logo" height="60px" width="50px"></a>
+                <a class="Logo" href="{{pathFor 'home'}}"><img src="http://i.imgur.com/vDdtrZY.png" alt="Logo" id = "Logo" onmouseover = "changeImg()" onmouseout = "normalImg()" height="60px" width="50px"></a>
+                <script>
+                function changeImg() {
+                    document.getElementById("Logo").src = "http://i.imgur.com/PJhvTRd.png";
+                }
+
+                function normalImg() {
+                    document.getElementById("Logo").src = "http://i.imgur.com/vDdtrZY.png";
+                }
+
+                </script>
+                <style>
+                    #Logo{
+                        border-radius: 50%;
+                        -webkit-transition: -webkit-transform .8s ease-in-out;
+                        transition: transform .8s ease-in-out;
+                    }
+
+                    #Logo:hover {
+                        -webkit-transform: rotate(360deg);
+                        transform: rotate(360deg);
+                        
+                    }
+                </style>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -29,19 +52,19 @@
                     </li>
 
                     <li>
-                        <a href="{{pathFor 'about'}}">About</a>
+                        <a id="about1" href="{{pathFor 'about'}}">About</a>
                     </li>
                     <li>
-                        <a href="{{pathFor 'team'}}">Our Team</a>
+                        <a id="OurTeam1" href="{{pathFor 'team'}}">Our Team</a>
                     </li>
                     <li>
-                        <a href="{{pathFor 'quiz'}}">Quiz</a>
+                        <a id="Quiz11" href="{{pathFor 'quiz'}}">Quiz</a>
                     </li>
                     <li>
-                        <a href="{{pathFor 'listings'}}">Listings</a>
+                        <a id="Listings1" href="{{pathFor 'listings'}}">Listings</a>
                     </li>
                     <li>
-                        <a href="{{pathFor 'myprofile'}}">My Profile</a>
+                        <a id="Profile11" href="{{pathFor 'myprofile'}}">My Profile</a>
                     </li>
                     </ul>
 

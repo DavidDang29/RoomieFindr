@@ -1,6 +1,6 @@
 #mainNav{
 	font-family: basic title font;
-	font-size: 15px;
+	font-size: 17px;
 	background-color: #EEEDF0;
 	text-color: ;
 
@@ -9,3 +9,241 @@
 #mainNav:hover {
 	background-color:#F79771;
 	}
+
+#about1{
+	border-size: 2px;
+	font-family: basic title font;
+	font-size: 17px;
+	font-weight: 100px;
+	text-decoration: none;
+}	
+
+/* unvisited link */
+#about1:link{
+	position: relative;
+	color: #000;
+ 	text-decoration: none;
+ 	text-decoration-color: gray;
+}
+
+/*for when you hover dat link */
+#about1:hover {
+	color: #000;
+	text-decoration: none;
+	text-decoration-color: gray;
+}
+
+
+#about1:before {
+	content: "";
+	position: absolute;
+	width:100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #000;
+	visibility: hidden;
+	transform: scaleX(0);
+	transition: all 0.7s ease-in-out 0s;
+	text-decoration: none;
+	text-decoration-color: gray;
+}
+/* for before you hover dat link */
+#about1:hover:before {
+	visibility: visible;
+	transform: scaleX(1);
+	text-decoration: none;
+	text-decoration-color: gray;
+}
+
+
+#OurTeam1{
+	border-size: 2px;
+	font-family: basic title font;
+	font-size: 17px;
+	font-weight: 100px;
+	text-decoration: none;
+}	
+
+/* unvisited link */
+#OurTeam1:link{
+	position: relative;
+	color: #000;
+ 	text-decoration: none;
+ 	text-decoration-color: gray;
+}
+
+/*for when you hover dat link */
+#OurTeam1:hover {
+	color: #000;
+	text-decoration: none;
+	text-decoration-color: gray;
+}
+
+
+#OurTeam1:before {
+	content: "";
+	position: absolute;
+	width:100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #000;
+	visibility: hidden;
+	transform: scaleX(0);
+	transition: all 0.7s ease-in-out 0s;
+	text-decoration: none;
+	text-decoration-color: gray;
+}
+/* for before you hover dat link */
+#OurTeam1:hover:before {
+	visibility: visible;
+	transform: scaleX(1);
+	text-decoration: none;
+	text-decoration-color: gray;
+}
+
+#Quiz11{
+	border-size: 2px;
+	font-family: basic title font;
+	font-size: 17px;
+	font-weight: 100px;
+	text-decoration: none;
+}	
+
+/* unvisited link */
+#Quiz11:link{
+	position: relative;
+	color: #000;
+ 	text-decoration: none;
+ 	text-decoration-color: gray;
+}
+
+/*for when you hover dat link */
+#Quiz11:hover {
+	color: #000;
+	text-decoration: none;
+	text-decoration-color: gray;
+}
+
+
+#Quiz11:before {
+	content: "";
+	position: absolute;
+	width:100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #000;
+	visibility: hidden;
+	transform: scaleX(0);
+	transition: all 0.7s ease-in-out 0s;
+	text-decoration: none;
+	text-decoration-color: gray;
+}
+/* for before you hover dat link */
+#Quiz11:hover:before {
+	visibility: visible;
+	transform: scaleX(1);
+	text-decoration: none;
+	text-decoration-color: gray;
+}
+
+#Listings1{
+	border-size: 2px;
+	font-family: basic title font;
+	font-size: 17px;
+	font-weight: 100px;
+	text-decoration: none;
+}	
+
+/* unvisited link */
+#Listings1:link{
+	position: relative;
+	color: #000;
+ 	text-decoration: none;
+ 	text-decoration-color: gray;
+}
+
+/*for when you hover dat link */
+#Listings1:hover {
+	color: #000;
+	text-decoration: none;
+	text-decoration-color: gray;
+}
+
+
+#Listings1:before {
+	content: "";
+	position: absolute;
+	width:100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #000;
+	visibility: hidden;
+	transform: scaleX(0);
+	transition: all 0.7s ease-in-out 0s;
+	text-decoration: none;
+	text-decoration-color: gray;
+}
+/* for before you hover dat link */
+#Listings1:hover:before {
+	visibility: visible;
+	transform: scaleX(1);
+	text-decoration: none;
+	text-decoration-color: gray;
+}
+
+#Profile11{
+	border-size: 2px;
+	font-family: basic title font;
+	font-size: 17px;
+	font-weight: 100px;
+	text-decoration: none;
+}	
+
+/* unvisited link */
+#Profile11:link{
+	position: relative;
+	color: #000;
+ 	text-decoration: none;
+ 	text-decoration-color: gray;
+}
+
+/*for when you hover dat link */
+#Profile11:hover {
+	color: #000;
+	text-decoration: none;
+	text-decoration-color: gray;
+}
+
+
+#Profile11:before {
+	content: "";
+	position: absolute;
+	width:100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #000;
+	visibility: hidden;
+	transform: scaleX(0);
+	transition: all 0.7s ease-in-out 0s;
+	text-decoration: none;
+	text-decoration-color: gray;
+}
+/* for before you hover dat link */
+#Profile11:hover:before {
+	visibility: visible;
+	transform: scaleX(1);
+	text-decoration: none;
+	text-decoration-color: gray;
+}
+
+
+
+
+
+
+
