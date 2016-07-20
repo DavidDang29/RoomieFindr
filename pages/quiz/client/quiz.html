@@ -63,15 +63,27 @@
   <br>
   <br>
     <div class="col-sm-12">
-    <h3> #5. Enter your City</h3>
-      <input type="text" class="js-city" placeholder="city"> 
+    <h3> #5. Enter your zipcode</h3>
+      <input type="text" class="js-zipcode" placeholder="ex) 02138"> 
   </div>
   <br>
   <br>
 
   <div class="col-sm-12">
-    <h3> #6. Enter your State</h3>
-      <input type="text" class="js-state" placeholder="State"> 
+    <h3> #6. Do you already have a place or are you looking for a place to live in? </h3>
+      <div class="col-sm-5 col-sm-offset-1"> 
+        <div class="thumbnail">
+          <input type="radio" id="js-place" value="Owns a place" name="place" onclick="savePlace(this.value)"><img src="https://pixabay.com/static/uploads/photo/2015/09/08/22/03/luggage-930804_960_720.jpg" style="width:400px; height:300px;">
+          <h3> I have a place </h3>
+        </div>
+      </div>
+
+      <div class="col-sm-5"> 
+        <div class="thumbnail">
+          <input type="radio" id="js-place" value="Looking for a place" name="place" onclick="savePlace(this.value)"><img src="https://c1.staticflickr.com/9/8221/8397491629_ac20ab9540_z.jpg" style="width:400px; height:300px;">
+          <h3> I am looking for a place </h3>
+        </div>
+      </div>
   </div>
   
   <div class="col-sm-12">
@@ -656,6 +668,9 @@
     document.getElementById("js-sexLife").value = sexLife;
   }
 
+  function savePlace(place) {
+    document.getElementById("js-place").value = place;
+  }
 </script>
 
 {{else}}

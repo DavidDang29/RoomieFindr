@@ -1,6 +1,11 @@
+Session.set("zipcode","");
+
  const name = $(".js-name").val();
  const gender = $(".js-gender").val();
+ const email = $(".js-email").val();
  const birth = $(".js-birth").val();
+ const zipcode = $(".js-zipcode").val();
+ const place = $(".js-place").val();
  const lifestyle = $(".js-lifestyle").val();
  const ocd = $(".js-ocd").val();
  const music =$(".js-music").val();
@@ -19,22 +24,26 @@
  const sex =$(".js-sex").val();
 
 
- //console.dir(item);
- //UserInfo.insert(item);
  Template.listings.helpers({
   mydata: function(){
-    return listings.find({},{sort:{zipcode:1}});
-}
-  })
+    const zipcode = Session.get("zipcode");
+    if (zipcode=="") {
+	return UserInfo.find({},{limit:5});
+    }
+    else
+        return UserInfo.find({zipcode:zipcode});
+   },
 
-Template.listings.helpers({
-	mydata:function(){
-		console.log("getting mydata");
-	   const val =  QuizResults.find({});
-	   console.dir(val.fetch()); 
-	   return val;
-	   // return QuizResults.find();
-	}
+  });
+
+
+Template.listings.events({
+        "click .js-submit": function(event) {
+	    console.log("clicked it");
+	    Session.set("zipcode",$(".js-zipcode").val());
+	    console.log(Session.get("zipcode"));
+	},
+
 })
 
 

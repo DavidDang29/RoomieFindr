@@ -1,5 +1,8 @@
  const name = $(".js-name").val();
  const gender = $(".js-gender").val();
+ const email = $(".js-email").val();
+ const zipcode = $(".js-zipcode").val();
+ const place = $(".js-place").val();
  const birth = $(".js-birth").val();
  const lifestyle = $(".js-lifestyle").val();
  const ocd = $(".js-ocd").val();
@@ -19,15 +22,11 @@
  const sex =$(".js-sex").val();
 
 
- //console.dir(item);
- //UserInfo.insert(item);
-
 Template.myprofile.helpers({
 	mydata:function(){
 		console.log("getting mydata");
 	   const val =  QuizResults.findOne({userId:Meteor.userId()});
 	   console.dir(val); 
 	   return [val];
-	   // return QuizResults.find();
 	}
 })

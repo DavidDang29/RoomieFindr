@@ -5,13 +5,14 @@
 <br>
 <br> 
 
-<body>
 
 
   <table class="table table-bordered">
-
   <thead><tr><th>Roommate Listings
-  <select>
+    </th></tr></thead>
+  </table>
+
+  <!--<select>
     <option>Alabama</option>
     <option>Alaska</option>
     <option>Arizona</option>
@@ -62,30 +63,30 @@
     <option>Wisconsin</option>
     <option>Wisconsin</option>
 
-  </select>
-  <br>
-</th></tr></thead>
+  </select>-->
+  
 
-  <tbody>
+<br>
+  ZipCode to search: <input type="text" class="js-zipcode"><br>
+
+  <center>
+      <input type="submit" name="submit" value="search" class="btn btn-info js-submit">
+  </center>
+
 
 
         {{#each user in mydata}}
       {{> listing user=user}}
    {{/each}}
+  </template>
+   
 
-
-  </tbody>
-  </table>
-
-
-</body>
-    <hr>
-</template>
 
 
 <template name="listing">
       <tr><td>
-       <a href="viewProfile/{{user._id}}">Profile</a> {{user.name}}
+       <a href="viewProfile/{{user._id}}">Profile</a> 
+       {{user.name}} {{user.zipcode}} {{user.subFree}} {{user.place}}
       </td></tr>
 </template>
 
